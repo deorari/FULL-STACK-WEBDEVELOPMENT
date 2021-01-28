@@ -1,0 +1,48 @@
+
+table {
+
+  width:500px;
+  border: 1px solid black;
+  border-collapse: collapse
+
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px dotted black;
+
+}
+
+th{
+  color:#FC3004;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sndrow{
+  color:#041EFC;
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+}
+.throw{
+  color:#D604FC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+tr:nth-child(2n)
+{
+  background-color:#e6e6e6;
+ }
+
+ span{
+   text-decoration: underline;
+ }
+.mytable{
+  margin-left:25%;
+  margin-top: 80px;
+}
+
+.it{
+  font-style: italic;
+  
+}
