@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>assignment</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  
+       <div class="outer">
+         <h2>Please Enter Your Details </h2>
+         <h3>Fill the application form below and submit</h3>
+         <form class="" action="mailto:xyz@gmail.com" method="post">
+           <table>
+             <tr>
+                <td><label>Name*</label></td>
+               <td><input class="name" type="text" name="First Name" placeholder="First Name"></td>
+               <td><input class="name" type="text" name="Last Name" placeholder="Last Name"></td>
+             </tr>
+             <tr>
+              <td><label>E-Mail Address*</label></td>
+               <td colspan="2"><input class="email" type="email" name="Email" placeholder="Email"></td>
+             </tr>
+             <tr>
+               <td><label>Phone Number*</label></td>
+               <td colspan="2"><input class="phone" type="tel" name="Phone Number" placeholder="Phone Number"></td>
+             </tr>
+             <tr>
+               <td><label>Gender*</label></td>
+                 <td colspan="2"><select class="gender">
+                 <option>Male</option>
+                 <option>Female</option>
+                 <option>Others</option>
+                 </select></td>
+             </tr>
+             <tr>
+                <td><label>Citizen*</label></td>
+                <td colspan="2"><select class="place" name="select city" >
+                 <option>Dehradun</option>
+                 <option>Delhi</option>
+                 <option>Chandigarh</option>
+                 <option>London</option>
+                 <option>Lahore</option>
+                 <option>Others</option>
+                 </select></td>
+             </tr>
+             <tr>
+              <td><label>Date of Birth</label></td>
+               <td colspan="2"><input class="birth" type="date" id="birthday" name="birthday">  </td>
+             </tr>
+             <tr>
+               <td><span>Address*</span></td>
+               <td><input type="text" name="street Address" class="street" placeholder="street Address"></input></td>
+               <td><input type="text" name="street line2" class="street" placeholder="street line2"></input></td>
+             </tr>
+             <tr> 
+               <td></td>
+               <td><input type="text" name="Landmark"  class="location" placeholder="Landmark"></input></td>
+               <td><input type="text" name="City"  class="location" placeholder="City"></input></td>
+             </tr>
+             <tr>  
+               <td></td>
+               <td> <input type="text" class="state" name="state/province" placeholder="state/province"></input></td>
+               <td> <input type="text" class="state" name="postal/zipcode" placeholder="postal/zipcode"></input></td>
+             </tr>
+             <tr>
+              <td></td>
+               <td colspan="2"><input class="submit" type="submit" value="SUBMIT"></td>
+             </tr>
+           </table>
+         </form>
+       </div>
+
+  </body>
+</html>
