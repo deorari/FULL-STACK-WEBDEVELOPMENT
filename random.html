@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Random</title>
+
+        <script>
+            var fullWidth = window.innerWidth;
+            var fullHeight = window.innerHeight;
+
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            function getRandomShape(){
+                var ele = document.getElementById('div2');
+                ele.style.position = "absolute";
+                
+
+                function dSqu(){    
+                    ele.style.width = "100px";
+                    ele.style.height = "100px";
+                    ele.style.borderRadius = "0%";
+                    ele.style.backgroundColor = getRandomColor();
+                    ele.style.left = Math.round(Math.random() * (fullWidth - 100)) + "px";
+                    ele.style.top = Math.round(Math.random() * (fullHeight - 100)) + "px";
+                }
+
+                function dRect(){    
+                    ele.style.width = "200px";
+                    ele.style.height = "100px";
+                    ele.style.borderRadius = "0%";
+                    ele.style.backgroundColor = getRandomColor();
+                    ele.style.left = Math.round(Math.random() * (fullWidth - 200)) + "px";
+                    ele.style.top = Math.round(Math.random() * (fullHeight - 100))+ "px";
+                }
+
+                function dCir(){    
+                    ele.style.width = "100px";
+                    ele.style.height = "100px";
+                    ele.style.borderRadius = "50%";
+                    ele.style.backgroundColor = getRandomColor();
+                    ele.style.left = Math.round(Math.random() * (fullWidth - 100)) + "px";
+                    ele.style.top = Math.round(Math.random() * (fullHeight - 100)) + "px";
+                }
+
+                var functions = [dSqu, dCir, dRect];
+                var min = 700;
+                var max = 1200;
+                var time = Math.floor(Math.random() * (max - min + 1) + min);
+
+                setTimeout(function(){
+                    var index = Math.floor(Math.random()*functions.length);
+                    functions[index]();
+                }, time);
+
+                document.getElementById("div1").innerHTML = "<h2>" + time + " ms" + "</h2>";
+            }
+        </script>
+    </head>
+    <body onload="getRandomShape();">
+        <div id="div1" style="margin-left: 45%;"></div>
+        <div id="div2" onclick="getRandomShape()"></div>
+    </body>
+</html>
